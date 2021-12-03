@@ -1,6 +1,6 @@
-# monefyAppiumTest
+# Appium-Java Project
 
-This automation project is developed using Appium and Java, to automate given Monefy application. <br />
+This automation project uses Appium and Java, to automate given Monefy application. <br />
 
 # Pre-requisites
 - Java _v8_
@@ -47,32 +47,3 @@ In this project below locator strategies are used:
 # Reporting
 This framework uses in-build jUnit reporter. <br />
 ![JUnit Report](https://i.imgur.com/IqNfF9k_d.webp?maxwidth=1520)
-
-***
-
-# Additional information
-I have chosen three important flows for the automation. 
-
-* Add an income.
-* Add an expense.
-* Modify an expense.
-
-These are important and mostly used flows in application, so I have chosen to automate them.
-
-Priority is high for these flows as they are important.
-
-### Testing at different levels
-I follow `Test Pyramid` which tells about the unit tests, Service/API tests and end-to-end tests. With this I get more understanding of which flows needs to be automated at which level.
-<br />
-![Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid/testPyramid.png)
-<br />
-> Source: [The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html "The Practical Test Pyramid")
-
-For example, 
-* I have not added test to verify if correct balance is shown on UI, as this should be verified in unit tests.
-* Also, positive and negative scenarios can be tested using API testing.
-
-Pros:
-- `Test Pyramid` gives us more confidence in making sure we have convered all scenrios at all levels of testing.
-- More tests at lower of level is faster is the feedback.
-- Unit and Service level tests takes less time compared to end-to-end tests.
